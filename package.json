@@ -1,10 +1,33 @@
 {
 	"name": "@codeeditorland/iot-tools",
 	"displayName": "Azure IoT Tools",
+	"version": "0.0.1",
+	"private": false,
 	"description": "The ultimate collection of extensions for working with Azure IoT in VS Code!",
+	"keywords": [
+		"codeeditorland",
+		"land",
+		"playform"
+	],
+	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/LandAzureIOTTools#readme",
+	"bugs": {
+		"url": "HTTPS://GitHub.Com/CodeEditorLand/LandAzureIOTTools/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+HTTPS://github.com/CodeEditorLand/LandAzureIOTTools.git"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "Source 🖋️ Open 👐🏻",
+		"email": "Source/Open@Editor.Land",
+		"url": "HTTPS://Editor.Land"
+	},
+	"type": "module",
 	"main": "./out/extension",
 	"scripts": {
 		"compile": "tsc -p ./",
+		"prepublishOnly": "Build 'Source/**/*.ts'",
 		"version": "tsc -v"
 	},
 	"contributes": {
@@ -23,6 +46,7 @@
 		"semver": "7.7.1"
 	},
 	"devDependencies": {
+		"@playform/build": "0.2.1",
 		"@types/node": "22.13.14",
 		"@types/semver": "7.7.0"
 	},
@@ -31,6 +55,9 @@
 		"vsciot-vscode.azure-iot-toolkit",
 		"vsciot-vscode.vscode-iot-workbench"
 	],
+	"publishConfig": {
+		"access": "public"
+	},
 	"icon": "azure-iot-tools-icon.png",
 	"aiKey": "0caaff90-cc1c-4def-b64c-3ef33615bc9b"
 }
